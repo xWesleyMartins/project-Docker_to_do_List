@@ -1,6 +1,6 @@
 FROM node:14
 
-WORKDIR /back-end
+WORKDIR /todo-app/back-end
 
 EXPOSE 3001
 
@@ -10,4 +10,6 @@ COPY . .
 
 RUN npm install
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT [ "npm" ]
+
+CMD [ "start" ]

@@ -1,6 +1,6 @@
 FROM node:14
 
-WORKDIR /tests
+WORKDIR /todo-app/tests
 
 ADD node_modules.tar.gz ./
 
@@ -8,4 +8,6 @@ COPY . .
 
 RUN npm install
 
-ENTRYPOINT ["npm", "test"]
+ENTRYPOINT [ "npm" ]
+
+CMD [ "test" ]
